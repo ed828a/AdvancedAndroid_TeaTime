@@ -97,7 +97,7 @@ class ImageDownloader {
             @Override
             public void run() {
                 if (callback != null) {
-                    callback.onDone(mTeas);
+                    callback.onDone(mTeas);  // key point
                     if (idlingResource != null) {
                         idlingResource.setIdleState(true);
                     }
